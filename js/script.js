@@ -51,11 +51,11 @@ new Vue({
         // de mostrarla, se reinicia el juego
         indicarFracaso() {
             Swal.fire({
-                    title: "Perdiste",
+                    title: "Lost",
                     html: `
                 <img class="img-fluid" src="./img/perdiste.png" alt="Perdiste">
-                <p class="h4">Agotaste tus intentos</p>`,
-                    confirmButtonText: "Jugar de nuevo",
+                <p class="h4">You exhausted your attempts</p>`,
+                    confirmButtonText: "Play again",
                     allowOutsideClick: false,
                     allowEscapeKey: false,
                 })
@@ -64,11 +64,11 @@ new Vue({
         // Mostrar alerta de victoria y reiniciar juego
         indicarVictoria() {
             Swal.fire({
-                    title: "¡Ganaste!",
+                    title: "WON!",
                     html: `
                 <img class="img-fluid" src="./img/ganaste.png" alt="Ganaste">
-                <p class="h4">Muy bien hecho</p>`,
-                    confirmButtonText: "Jugar de nuevo",
+                <p class="h4">Very well done</p>`,
+                    confirmButtonText: "Play again",
                     allowOutsideClick: false,
                     allowEscapeKey: false,
                 })
